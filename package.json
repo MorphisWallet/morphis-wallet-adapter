@@ -35,6 +35,9 @@
   },
   "homepage": "https://github.com/MorphisWallet/morphis-wallet-adapter",
   "bugs": "https://github.com/MorphisWallet/morphis-wallet-adapter/issues",
+  "publishConfig": {
+    "registry": "https://github.com/MorphisWallet/morphis-wallet-adapter.git"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "@rollup/plugin-babel": "^6.0.3",

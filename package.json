@@ -2,11 +2,22 @@
   "name": "@morphis/morphis-wallet-adapter",
   "version": "0.0.1",
   "description": "Morphis wallet adapter based on Sui wallet adapter",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "^pnpm@7.0.0+",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "prepare": "husky install",
-    "dev": "rollup -c rollup.config.ts --configPlugin typescript --watch",
+    "dev": "rollup -c rollup.config.ts --bundleConfigAsCjs --configPlugin typescript --watch",
+    "build": "pnpm clean && NODE_ENV=production rollup -c rollup.config.ts --bundleConfigAsCjs --configPlugin typescript",
+    "clean": "rm -rf dist/",
     "lint": "npx eslint src --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier --write src"
   },
@@ -23,6 +34,10 @@
     "url": "git@github.com:MorphisWallet/morphis-wallet-adapter.git"
   },
   "homepage": "https://github.com/MorphisWallet/morphis-wallet-adapter",
+  "bugs": "https://github.com/MorphisWallet/morphis-wallet-adapter/issues",
+  "publishConfig": {
+    "registry": "https://github.com/MorphisWallet/morphis-wallet-adapter.git"
+  },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",
     "@rollup/plugin-babel": "^6.0.3",

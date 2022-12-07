@@ -1,6 +1,6 @@
 {
   "name": "@morphis-wallet/morphis-wallet-adapter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Morphis wallet adapter based on Sui wallet adapter",
   "engines": {
     "node": ">=16.0.0"
@@ -36,7 +36,7 @@
   "homepage": "https://github.com/MorphisWallet/morphis-wallet-adapter",
   "bugs": "https://github.com/MorphisWallet/morphis-wallet-adapter/issues",
   "publishConfig": {
-    "registry": "https://github.com/MorphisWallet/morphis-wallet-adapter.git"
+    "registry": "https://registry.npmjs.org/"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.20.2",

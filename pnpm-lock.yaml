@@ -4,7 +4,7 @@ specifiers:
   '@babel/preset-env': ^7.20.2
   '@commitlint/cli': ^17.3.0
   '@commitlint/config-conventional': ^17.3.0
-  '@mysten/sui.js': ^0.29.0
+  '@mysten/sui.js': ^0.20.0
   '@rollup/plugin-babel': ^6.0.3
   '@rollup/plugin-commonjs': ^24.0.0
   '@rollup/plugin-node-resolve': ^15.0.1
@@ -27,7 +27,7 @@ specifiers:
   typescript: ^4.9.3
 
 dependencies:
-  '@mysten/sui.js': 0.29.1
+  '@mysten/sui.js': 0.20.0
 
 devDependencies:
   '@babel/preset-env': 7.20.2_@babel+core@7.20.5
@@ -1464,27 +1464,26 @@ packages:
       '@jridgewell/sourcemap-codec': 1.4.14
     dev: true
 
-  /@mysten/bcs/0.6.1:
-    resolution: {integrity: sha512-xogS6EqXhyAeineYTy3RT6pWW5W9cy3A4uPIgwedGAQFZbW23zk/jlmZpJZuZmdzuD+EA524uuNsLGgFgzw11g==}
-    dependencies:
-      bs58: 5.0.0
+  /@mysten/bcs/0.5.0:
+    resolution: {integrity: sha512-FjGnXZfR4dY01Q1l3xjgaU+ruIlVomXZk8vzgsQXPFOv7O4pNiOOpJyMEMUnWcyUiktk4R9MxoJJrygOtdxaUw==}
     dev: false
 
-  /@mysten/sui.js/0.29.1:
-    resolution: {integrity: sha512-EupoejRft6RUOv9gzvAGnZNPRDD2a/YvUkWNQtijuEFADzJ1zRlE2YUFGn9fW+/kRgYLoR0WWMvd5rNYPD2nqg==}
+  /@mysten/sui.js/0.20.0:
+    resolution: {integrity: sha512-U25eSGKT08XPCRKHbrvDYlylOSAIQASMKKwnreC8vT3ukvQg1NwTX+SFZPvX+xsLZGS2b3yOQ2Uzhzho5/OIWA==}
     engines: {node: '>=16'}
     dependencies:
-      '@mysten/bcs': 0.6.1
+      '@mysten/bcs': 0.5.0
       '@noble/hashes': 1.2.0
       '@noble/secp256k1': 1.7.0
       '@scure/bip32': 1.1.1
       '@scure/bip39': 1.1.0
       '@suchipi/femver': 1.0.0
+      bs58: 5.0.0
       cross-fetch: 3.1.5
-      jayson: 4.0.0
+      jayson: 3.7.0
       js-sha3: 0.8.0
+      lossless-json: 1.0.5
       rpc-websockets: 7.5.0
-      superstruct: 1.0.3
       tweetnacl: 1.0.3
     transitivePeerDependencies:
       - bufferutil
@@ -3361,8 +3360,8 @@ packages:
       ws: 7.5.9
     dev: false
 
-  /jayson/4.0.0:
-    resolution: {integrity: sha512-v2RNpDCMu45fnLzSk47vx7I+QUaOsox6f5X0CUlabAFwxoP+8MfAY0NQRFwOEYXIxm8Ih5y6OaEa5KYiQMkyAA==}
+  /jayson/3.7.0:
+    resolution: {integrity: sha512-tfy39KJMrrXJ+mFcMpxwBvFDetS8LAID93+rycFglIQM4kl3uNR3W4lBLE/FFhsoUCEox5Dt2adVpDm/XtebbQ==}
     engines: {node: '>=8'}
     hasBin: true
     dependencies:
@@ -3376,6 +3375,7 @@ packages:
       eyes: 0.1.8
       isomorphic-ws: 4.0.1_ws@7.5.9
       json-stringify-safe: 5.0.1
+      lodash: 4.17.21
       uuid: 8.3.2
       ws: 7.5.9
     transitivePeerDependencies:
@@ -3600,7 +3600,6 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
-    dev: true
 
   /log-update/4.0.0:
     resolution: {integrity: sha512-9fkkDevMefjg0mmzWFBW8YkFP91OrizzkW3diF7CpG+S2EYdy4+TVfGwz1zeF8x7hCx1ovSPTOE9Ngib74qqUg==}
@@ -3618,6 +3617,10 @@ packages:
     dependencies:
       js-tokens: 4.0.0
     dev: true
+
+  /lossless-json/1.0.5:
+    resolution: {integrity: sha512-RicKUuLwZVNZ6ZdJHgIZnSeA05p8qWc5NW0uR96mpPIjN9WDLUg9+kj1esQU1GkPn9iLZVKatSQK5gyiaFHgJA==}
+    dev: false
 
   /lru-cache/6.0.0:
     resolution: {integrity: sha512-Jo6dJ04CmSjuznwJSS3pUeWmd/H0ffTlkXXgwZi+eq1UCmqQwCh+eLsYOYCwY991i2Fah4h1BEMCx4qThGbsiA==}
@@ -4499,11 +4502,6 @@ packages:
     resolution: {integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==}
     engines: {node: '>=8'}
     dev: true
-
-  /superstruct/1.0.3:
-    resolution: {integrity: sha512-8iTn3oSS8nRGn+C2pgXSKPI3jmpm6FExNazNpjvqS6ZUJQCej3PUXEKM8NjHBOs54ExM+LPW/FBRhymrdcCiSg==}
-    engines: {node: '>=14.0.0'}
-    dev: false
 
   /supports-color/5.5.0:
     resolution: {integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==}

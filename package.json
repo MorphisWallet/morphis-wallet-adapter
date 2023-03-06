@@ -1,6 +1,6 @@
 {
   "name": "@morphis-wallet/morphis-wallet-adapter",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Morphis wallet adapter based on Sui wallet adapter",
   "engines": {
     "node": ">=16.0.0"

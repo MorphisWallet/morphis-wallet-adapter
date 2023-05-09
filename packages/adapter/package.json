@@ -1,0 +1,52 @@
+{
+  "name": "@morphis-wallet/morphis-wallet-adapter",
+  "version": "0.1.0",
+  "description": "Morphis wallet adapter based on Sui wallet adapter",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "rollup -c rollup.config.ts --bundleConfigAsCjs --configPlugin typescript --watch",
+    "build": "pnpm clean && NODE_ENV=production rollup -c rollup.config.ts --bundleConfigAsCjs --configPlugin typescript",
+    "clean": "rm -rf dist/"
+  },
+  "keywords": [
+    "sui",
+    "morphis",
+    "wallet",
+    "adapter"
+  ],
+  "author": "Morphis Labs<morphiswallet@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MorphisWallet/morphis-wallet-adapter.git"
+  },
+  "homepage": "https://github.com/MorphisWallet/morphis-wallet-adapter",
+  "bugs": "https://github.com/MorphisWallet/morphis-wallet-adapter/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "@types/node": "^20.1.1",
+    "rollup": "^3.21.5",
+    "rollup-plugin-polyfill-node": "^0.12.0",
+    "tslib": "^2.5.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@mysten/sui.js": "^0.33.0",
+    "@mysten/wallet-adapter-wallet-standard": "^0.7.5",
+    "@mysten/wallet-standard": "^0.5.5"
+  }
+}

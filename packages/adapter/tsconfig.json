@@ -1,0 +1,23 @@
+{
+  "include": ["./src"],
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "esnext",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleResolution": "node",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noEmit": false,
+    "isolatedModules": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "baseUrl": "./"
+  }
+}

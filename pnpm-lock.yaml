@@ -6,7 +6,7 @@ specifiers:
   '@commitlint/config-conventional': ^17.3.0
   '@mysten/sui.js': ^0.20.0
   '@rollup/plugin-babel': ^6.0.3
-  '@rollup/plugin-commonjs': ^24.0.0
+  '@rollup/plugin-commonjs': ^25.0.0
   '@rollup/plugin-node-resolve': ^15.0.1
   '@rollup/plugin-terser': ^0.4.0
   '@rollup/plugin-typescript': ^11.0.0
@@ -34,7 +34,7 @@ devDependencies:
   '@commitlint/cli': 17.3.0
   '@commitlint/config-conventional': 17.3.0
   '@rollup/plugin-babel': 6.0.3_jq7ejmtxohag7dsrebvugbjt6q
-  '@rollup/plugin-commonjs': 24.0.1_rollup@3.5.1
+  '@rollup/plugin-commonjs': 25.0.0_rollup@3.5.1
   '@rollup/plugin-node-resolve': 15.0.1_rollup@3.5.1
   '@rollup/plugin-terser': 0.4.0_rollup@3.5.1
   '@rollup/plugin-typescript': 11.0.0_3d7bvrhnnvjmhphi3zgbz54owe
@@ -1543,8 +1543,8 @@ packages:
       rollup: 3.5.1
     dev: true
 
-  /@rollup/plugin-commonjs/24.0.1_rollup@3.5.1:
-    resolution: {integrity: sha512-15LsiWRZk4eOGqvrJyu3z3DaBu5BhXIMeWnijSRvd8irrrg9SHpQ1pH+BUK4H6Z9wL9yOxZJMTLU+Au86XHxow==}
+  /@rollup/plugin-commonjs/25.0.0_rollup@3.5.1:
+    resolution: {integrity: sha512-hoho2Kay9TZrLu0bnDsTTCaj4Npa+THk9snajP/XDNb9a9mmjTjh52EQM9sKl3HD1LsnihX7js+eA2sd2uKAhw==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
       rollup: ^2.68.0||^3.0.0

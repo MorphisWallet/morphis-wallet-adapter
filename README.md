@@ -1,3 +1,15 @@
+### ⚠️⚠️ This repo is archived, and will not be maintained. ⚠️⚠️
+
+### @mysten and other orgs/individuals have created lots of wallet kits. Legacy adapter does not fully follow the latest wallet standards.
+
+see
+https://www.npmjs.com/package/@mysten/wallet-kit
+https://kit.suiet.app/
+
+### If you want to show some specific wallets only, use the detect function of the wallet kit and filter by yourself. You should no longer set adapters in the adapter-provider imperatively.
+
+___
+
 # Morphis Wallet Adapter
 
 ### Before we start
